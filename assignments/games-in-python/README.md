@@ -1,19 +1,35 @@
+# 📘 Assignment: Games in Python
 
-# 🎮 Hangman Game Challenge
+## 🎯 Objective
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+Build a Hangman-style word game to practice Python fundamentals including strings, loops, conditionals, and user input. By the end, students should be able to structure game logic and provide clear feedback to players.
 
-## � What You'll Build
+## 📝 Tasks
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+### 🛠️ Build Core Game Logic
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+#### Description
+Create the base Hangman game flow. The program should choose a secret word, accept player guesses one letter at a time, and update the displayed progress after each guess.
 
-## ✅ Must Have's
+#### Requirements
+Completed program should:
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+- Randomly select a word from a predefined list.
+- Display the hidden word using underscores (for example, `_ _ _ _`).
+- Ask the player to guess one letter per turn.
+- Reveal correctly guessed letters in all matching positions.
+- Prevent crashes from invalid input such as empty guesses.
+
+### 🛠️ Track Attempts and End States
+
+#### Description
+Add rules for incorrect guesses and clear game-ending behavior. The game should stop when the word is solved or when the player runs out of attempts.
+
+#### Requirements
+Completed program should:
+
+- Track remaining incorrect guesses and update the count after wrong letters.
+- Show letters already guessed so the player can avoid repeats.
+- End with a win message if the full word is guessed.
+- End with a lose message if attempts reach zero, and reveal the secret word.
+- Include at least one short sample game interaction in comments or output documentation.
